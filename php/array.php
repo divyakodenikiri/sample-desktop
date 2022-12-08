@@ -38,6 +38,7 @@ echo "<hr>";
 $movies = array("kantaara", "mugarumale", "paramathma", "annabond");
 print_r($movies);
 echo sizeof($movies);
+// added two line
 
 
 
