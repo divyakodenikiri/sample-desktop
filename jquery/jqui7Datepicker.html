@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jquery1</title>
+      
+   <script type="text/javascript" src="jquery.min.js"></script>
+   <script src="jquery-ui/jquery-ui.js"></script>
+   <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+   <style type="text/css">
+    #box1{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    }
+    #box2{
+        width: 300px;
+        height: 300px;
+        background-color: pink;
+
+    }
+
+
+
+</style>
+</head>
+<body>
+     
+<div class="ui-widget">
+    <label for="tags">Tags: </label>
+    <input id="tags">
+  </div> 
+   
+  <p>Date: <input type="text" id="datepicker"></p>
+  <div id="progressbar"></div>
+  <div class="toggler">
+    <div id="effect" class="ui-widget-content ui-corner-all">
+      <h3 class="ui-widget-header ui-corner-all">Animate</h3>
+      <p>
+        Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.
+      </p>
+    </div>
+  </div>
+   
+  <button id="button" class="ui-state-default ui-corner-all">Toggle Effect</button>
+  <ol id="selectable">
+    <li class="ui-widget-content">Item 1</li>
+    <li class="ui-widget-content">Item 2</li>
+    <li class="ui-widget-content">Item 3</li>
+    <li class="ui-widget-content">Item 4</li>
+    <li class="ui-widget-content">Item 5</li>
+    <li class="ui-widget-content">Item 6</li>
+    <li class="ui-widget-content">Item 7</li>
+  </ol>
+
+  
+    
+  
+    <script type="text/javascript">
+       
+        $( "#datepicker" ).datepicker();
+        var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+    $( "#progressbar" ).progressbar({
+      value: 100
+    });
+    $( "#selectable" ).selectable();
+        
+      
+      
+      </script>
+      <script>
+        $( function() {
+          var state = true;
+          $( "#button" ).on( "click", function() {
+            if ( state ) {
+              $( "#effect" ).animate({
+                backgroundColor: "#aa0000",
+                color: "#fff",
+                width: 500
+              }, 1000 );
+            } else {
+              $( "#effect" ).animate({
+                backgroundColor: "#fff",
+                color: "#000",
+                width: 240
+              }, 1000 );
+            }
+            state = !state;
+          });
+        } );
+        </script>
+  
+      </body>
+      </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+   
+    <title>jquery1</title>
+   <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>-->
+   <script type="text/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+    <input type="button"value="start"id="button">
+    <div id="circle1"></div>
+   <div id="circle2"></div>
+   <div id="circle3"></div>  
+   <div id="circle4"></div>
+   <div id="circle5"></div> 
+   
+    <script type="text/javascript">
+        // $(".square").click(function(){
+        //     alert("square was clicked!")
+        // });
+        $("div").click(function(){
+           alert("you have clicked"+ $(this).css("background-color") + '' + $(this).attr("id"));
+        });
+       
+       
+
+
+    </script>
+
+    
+</body>
+</html>

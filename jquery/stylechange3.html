@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery.min.js"></script>
+    <style>
+      #circle{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: pink;
+            margin: 10px;
+        }
+       
+        </style>
+   
+    
+</head>
+<body>
+    <div id="circle"></div>
+    <script type="text/javascript">
+
+        
+        $("#circle").click(function(){
+            var w = $(document).width();
+            var h = $(document).height();
+            document.write("width="+ w + "<br>" + "height="+h);
+        //   document.write($("body").css("height"));
+        //   document.write("<br>");
+        //   document.write("height=");
+        //   document.write($("body").css("width"));
+
+    });
+                    
+                
+                
+            
+           
+        
+
+    </script>
+
+    
+</body>
+</html>

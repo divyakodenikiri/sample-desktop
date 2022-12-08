@@ -1,0 +1,101 @@
+ <html>
+ <head>
+        <title>javascript</title>
+        
+ </head>
+
+
+
+ <body>
+    
+        <button onclick="alert('Hi divya!')">Click Me!</button>
+        <script type="text/javascript">
+           alert("page is loaded!");
+        </script>
+    
+        
+         <p id="text1">Hello world</p>
+        <script type="text/javascript">
+            //This is a one line comment
+
+            /*
+            This is a multi-line comment!
+            */
+            document.getElementById("text").innerHTML = "Hello havi!";
+
+    </script>
+    <hr> 
+      <p id="text">Hello world</p>
+    <button id="mybutton">Change text</button>
+    <script type="text/javascript">
+        document.getElementById("mybutton").onclick =function(){
+            alert("button clicked...!");
+        }
+  
+
+        
+
+</script> 
+
+
+
+ <hr>
+ <p id="text1">good morning</p>
+    <button id="button1">Change text1</button>
+
+    <p id="text2">very good morning...</p>
+    <button id="button2">change text2</button>
+
+    <p id="text3">javascript......</p>
+    <button id="button3">change text3</button>
+
+    <p id="text4"></p>
+    <button id="button4">click for new</button>
+    
+    <p id="text5">This is for styling</p>
+    <button id="button5">click for styling</button>
+
+    <p id="text6">This is my color....</p>
+    <button id="button6">click for color</button>
+
+    <p id="text7">This text is disappear....</p>
+    <button id="button7">click disappear about </button>
+
+
+    
+    <script type="text/javascript">
+        //change text from good morning to good afternoon
+        document.getElementById("button1").onclick =function(){  
+        document.getElementById("text1").innerHTML ="good afternoon";
+        }
+        //same as above....to good evening
+        document.getElementById("button2").onclick =function(){  
+        document.getElementById("text2").innerHTML ="good evening";
+        }
+        //modify text
+        document.getElementById("button3").onclick =function(){  
+        document.getElementById("text3").innerHTML = "i think..." +document.
+        getElementById("text3").innerHTML + "....is awesom!";  
+        }
+        //new text appears
+       document.getElementById("button4").onclick =function(){  
+        document.getElementById("text4").innerHTML ="<h1>New paragraph</h1>";
+        }
+        //fontsize styling
+
+        document.getElementById("button5").onclick =function(){  
+        document.getElementById("text5").style.fontSize = "50px";
+        }
+        //style coloring red
+        document.getElementById("button6").onclick =function(){  
+        document.getElementById("text6").style.color = "red";
+        }
+        //text disappear
+ 
+        document.getElementById("button7").onclick =function(){  
+        document.getElementById("text7").style.display = "none";
+        }
+       </script>  
+        <hr>
+       </body>
+       </html>
